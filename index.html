@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Timestamp App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="center-container">
+    <!-- Logo section -->
+    <div class="logo-container">
+      <img src="logo_nexassure.png" alt="Your Logo">
+    </div>
+
+    <label for="imageInput" class="upload-label">
+      <span>Choose an Image</span>
+      <input type="file" id="imageInput" accept="image/*">
+    </label>
+
+    <div class="timestamp-input">
+      <label for="timestampInput">Timestamp:</label>
+      <input type="text" id="timestampInput" placeholder="Enter timestamp">
+    </div>
+
+    <button class="action-button" onclick="addTimestamp()">Add Timestamp</button>
+    <button class="action-button" onclick="processAndDisplayImage()">Process and Display Image</button>
+    <button class="action-button save-button" onclick="saveProcessedImage()">Save Image</button>
+
+    <div id="result" class="result-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

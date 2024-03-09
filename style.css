@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  background:  url('background_image.png');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-container {
+  background: rgba(12, 12, 12, 0.459);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+
+/* Logo styles */
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.upload-label {
+  display: block;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-label:hover {
+  background-color: #2980b9;
+}
+
+.timestamp-input {
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+  width: 70%;
+  text-align: center;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+.action-button {
+  background: rgba(46, 204, 113, 0.8);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.action-button:hover {
+  background: rgba(46, 204, 113, 1);
+}
+
+/* Style for the Save Image button */
+.action-button.save-button {
+  background: rgba(52, 152, 219, 0.8);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.action-button.save-button:hover {
+  background: rgba(52, 152, 219, 1);
+}
+
+.result-container {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
