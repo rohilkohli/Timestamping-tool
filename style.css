@@ -1,24 +1,39 @@
+/* Common styles for all devices */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  height: 100vh;
-  background:  url('background_image.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('backgroundnexassure.png');
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.title-bar {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.title-bar img {
+  max-height: 40px;
+}
+
 .center-container {
-  background: rgba(12, 12, 12, 0.459);
+  background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   border-radius: 12px;
-  padding: 20px;
+  padding: 80px 20px 20px; 
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
   text-align: center;
 }
 
-/* Logo styles */
+/* Logo container styles */
 .logo-container {
   margin-bottom: 20px;
 }
@@ -77,7 +92,6 @@ input[type="text"]:focus {
   background: rgba(46, 204, 113, 1);
 }
 
-/* Style for the Save Image button */
 .action-button.save-button {
   background: rgba(52, 152, 219, 0.8);
   color: #fff;
@@ -101,4 +115,15 @@ input[type="text"]:focus {
   padding: 20px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  .center-container {
+    padding: 20px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
 }
