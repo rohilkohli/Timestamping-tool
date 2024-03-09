@@ -102,5 +102,5 @@ input[type="text"]:focus {
   padding: 20px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
-  width: 100%; /* Adjusted width for responsiveness */
+
 }
