@@ -73,7 +73,7 @@ function addTimestamp() {
         ctx.drawImage(image, 0, 0);
   
         // Set font and fill style for the timestamp text
-        ctx.font = '16px Arial';
+        ctx.font = '21px Arial';
         ctx.fillStyle = 'black';
   
         // Adjust the position of the timestamp (bottom-left corner)
